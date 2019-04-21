@@ -7,9 +7,9 @@ def oxford_comma(array)
     when array.length == 2
       "#{array[0]} and #{array[1]}"
     when array.length > 2
-      binding.pry
       last_element = array.last
       array.pop()
       string = array.join(", ")
+      binding.pry
     end
 end
